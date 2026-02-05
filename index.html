@@ -15,11 +15,14 @@
     d.setDate(d.getDate() - 1);
 
     document.getElementById("yesterdayDate").innerHTML =
-      d.toLocaleDateString("en-GB", {
+      d.toLocaleDateString("ms-MY", {
         timeZone: "Asia/Kuala_Lumpur",
+        weekday: "long",   // ← ADD THIS
         day: "numeric",
         month: "long",
         year: "numeric"
       });
   </script>
 </center>
+
+
