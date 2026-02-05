@@ -1,0 +1,25 @@
+<center>
+  <div style="
+    width:400px;
+    height:30px;
+    line-height:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #2c8fff;
+    font-weight: bold;
+    text-align: center;
+  " id="yesterdayDate"></div>
+
+  <script>
+    const d = new Date();
+    d.setDate(d.getDate() - 1);
+
+    document.getElementById("yesterdayDate").innerHTML =
+      d.toLocaleDateString("en-GB", {
+        timeZone: "Asia/Kuala_Lumpur",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      });
+  </script>
+</center>
